@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="src/script.js" defer type="module"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <h1 class="brand">Weather App</h1>
+        <div>
+          <h3 class="temp">16&#176;</h3>
+          <div class="city-time">
+            <h3 class="name">London</h3>
+            <small>
+              <span class="time">06:09</span>
+              -
+              <span class="date">Monday, May 5</span>
+            </small>
+          </div>
+          <div class="weather">
+            <img
+              src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+              alt="icon"
+              width="50"
+              height="50"
+              class="icon"
+            />
+            <span class="condition">Sunny</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <form action="" id="location-input">
+          <input type="text" class="search" placeholder="Search Location..." />
+          <button class="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                fill="currentcolor"
+                d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+
+        <ul class="cities">
+          <li class="city">New York</li>
+          <li class="city">California</li>
+          <li class="city">Paris</li>
+          <li class="city">Tokyo</li>
+        </ul>
+
+        <ul class="details">
+          <h4>Weather Details</h4>
+          <li><span>Cloudy</span> <span class="cloud">89%</span></li>
+          <li><span>Humidity</span> <span class="humidity">64%</span></li>
+          <li><span>Wind</span> <span class="wind">8km/h1</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
